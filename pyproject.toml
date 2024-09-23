@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "demo-inference"
+version = "0.1.0"
+description = ""
+authors = ["rajatgupta19999 <rajatgupta19999@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+fastapi = {extras = ["all"], version = "^0.115.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+pylint = "^3.3.0"
+mypy = "^1.11.2"
+make = "^0.1.6.post2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

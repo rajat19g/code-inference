@@ -1,0 +1,35 @@
+# Ignore Python cache files and directories
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Ignore the build directory
+build/
+dist/
+*.egg-info/
+
+# Ignore Git files
+.git/
+.gitignore
+
+# Ignore local development configurations
+.idea/
+.vscode/
+*.log
+
+# Ignore test artifacts and coverage reports
+.coverage
+htmlcov/
+pytest_cache/
+*.cover
+*.log
+
+# Ignore Docker-related files if not needed in the image
+.dockerignore
+docker-compose.yml

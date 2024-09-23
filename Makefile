@@ -16,9 +16,8 @@ install: $(INSTALL_STAMP)
 poetry.lock:
 $(INSTALL_STAMP): pyproject.toml poetry.lock
 ifndef POETRY
-	$(error "poetry is not available, please install it first.")
-endif
 	pip install poetry
+endif
 	@poetry install --only dev
 	@touch $(INSTALL_STAMP)
 

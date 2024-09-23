@@ -16,9 +16,9 @@ install: $(INSTALL_STAMP)
 poetry.lock:
 $(INSTALL_STAMP): pyproject.toml poetry.lock
 ifndef POETRY
-	pip install poetry
+	python3 -m pip install -upgrade poetry
 endif
-	@poetry install --only dev
+	@poetry install 
 	@touch $(INSTALL_STAMP)
 
 test: $(INSTALL_STAMP)

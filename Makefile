@@ -6,6 +6,7 @@ src := demo_inference
 
 all: test
 
+
 clean:
 	@find . -name \*.pyc -delete
 	@find . -name __pycache__ -delete
@@ -17,6 +18,7 @@ $(INSTALL_STAMP): pyproject.toml poetry.lock
 ifndef POETRY
 	$(error "poetry is not available, please install it first.")
 endif
+	pip install poetry
 	@poetry install --only dev
 	@touch $(INSTALL_STAMP)
 

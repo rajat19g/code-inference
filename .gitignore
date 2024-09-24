@@ -9,10 +9,6 @@ venv/
 env/
 ENV/
 
-# Poetry specific
-poetry.lock
-.install.stamp
-
 # Distribution / packaging
 .Python
 build/
